@@ -78,13 +78,25 @@ body {
 	margin-top: 10px;
 }
 
+/* Social Media */
+.socialMediaDiv {
+	float: right;
+	width: 33%;
+	margin-top: 10px;
+}
+
+.socialMediaImages {
+	height: 40px;
+	float: right;
+}
+
 /*
   =====================================
   Map
   =====================================
 */
 #map {
-	width: 600px;
-	height: 400px;
+	width: 560px;
+	height: 360px;
 	background-color: #333;
 }
