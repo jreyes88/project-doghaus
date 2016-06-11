@@ -32,7 +32,7 @@ $("document").ready(function(){
 	            var twoDigitTemp = finalTempLongString.slice(0,[2]);
 	            console.log(twoDigitTemp);
 
-	            $(".weatherDiv").html("<p> Current Weather : " + currentWeatherCondition +  ". Current Temperature : " + twoDigitTemp + " "+ "&#x2109"+  "</p>");
+	            $(".weatherDiv").html("<p class='text-muted'> Current Weather : " + currentWeatherCondition +  ". Current Temperature : " + twoDigitTemp + " "+ "&#x2109"+  "</p>");
 	        }
 
 	        convertFah();//call conversion function
