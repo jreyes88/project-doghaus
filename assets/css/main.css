@@ -64,8 +64,18 @@ body {
   background-color: #fff;
 }
 
-#footer-text {
-	padding: 10px 10px;
+/* Left Side weather */
+.weatherDiv {
+	float: left;
+	width: 33%;
+	margin-top: 10px;
+}
+
+/* Centered footer text */
+.copyrightDiv {
+	float: left;
+	width: 33%;
+	margin-top: 10px;
 }
 
 /*
