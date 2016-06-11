@@ -1,5 +1,4 @@
 $("document").ready(function(){
-	console.log("JS and jQuery is linked and working");// Confirm JS
 
 	/***  GLOBAL VARIABLES  ***/
 		// Declare vars here
@@ -12,25 +11,16 @@ $("document").ready(function(){
 			url: weatherURL,
 			method: 'GET'
 		}).done(function(response){
-			console.log(response);
-			console.log(response.city.name);
-			console.log(response.list[1].weather[0]);
 			var currentWeatherCondition = response.list[0].weather[0].description;
-			console.log(currentWeatherCondition);
-
 
 			var kelvinTemp = response.list[0].main.temp;
-	        console.log(kelvinTemp);
-	        
 	        
 	        function convertFah() {
 	            var newTemp = kelvinTemp - 273.15;
 	            var newNewTemp = newTemp * 1.80;
 	            var finalTemp = newNewTemp + 32;
-	            console.log(finalTemp);
 	            var finalTempLongString = finalTemp.toString();
 	            var twoDigitTemp = finalTempLongString.slice(0,[2]);
-	            console.log(twoDigitTemp);
 
 	            $(".weatherDiv").html("<p class='text-muted'> Current Weather : " + currentWeatherCondition +  ". Current Temperature : " + twoDigitTemp + " "+ "&#x2109"+  "</p>");
 	        }
@@ -67,6 +57,5 @@ $("document").ready(function(){
     overlayParentElement : 'body',
     transition: function(url){ window.location.href = url; }
   });
-
 
 });// End document.ready

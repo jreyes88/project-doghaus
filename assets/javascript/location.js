@@ -24,7 +24,6 @@ $("document").ready(function(){
 			marker.addListener('click', function() {
 				infowindow.open(map, marker);
 			});
-
 		};
 
 	initMap();
