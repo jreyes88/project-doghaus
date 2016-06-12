@@ -19,10 +19,10 @@ $("document").ready(function(){
 	            var newTemp = kelvinTemp - 273.15;
 	            var newNewTemp = newTemp * 1.80;
 	            var finalTemp = newNewTemp + 32;
-	            var finalTempLongString = finalTemp.toString();
-	            var twoDigitTemp = finalTempLongString.slice(0,[2]);
+	            var finalTempRounded = Math.floor(finalTemp);
+	            var finalTempString = finalTempRounded.toString();
 
-	            $(".weatherDiv").html("<p class='text-muted'> Current Weather : " + currentWeatherCondition +  ". Current Temperature : " + twoDigitTemp + " "+ "&#x2109"+  "</p>");
+	            $(".weatherDiv").html("<p class='text-muted'> Current Weather : " + currentWeatherCondition +  ". Current Temperature : " + finalTempString + " "+ "&#x2109"+  "</p>");
 	        }
 
 	        convertFah();//call conversion function
@@ -38,8 +38,8 @@ $("document").ready(function(){
 	$(".animsition").animsition({
     inClass: 'fade-in-left',
     outClass: 'fade-out-left',
-    inDuration: 1500,
-    outDuration: 800,
+    inDuration: 700,
+    outDuration: 400,
     linkElement: '.animsition-link',
     // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
     loading: true,
