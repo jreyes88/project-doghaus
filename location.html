@@ -69,14 +69,46 @@
     <div class= "container" id="bigContainer">
         <!-- Header -->
         <header>
-            <h1 class="text-center">Location</h1>
+            <br>
+            <!--  <h1 class="text-center">Location</h1> -->
         </header>
 
         <!-- Map -->
-        <div class="row">
-            <div class="col-md-1"> </div>
+        <div class="row" id="locationDiv">
             <div class="col-md-8" id="map"></div>
-            <div class="col-md-3"><p>We are located at</p></div>
+            <div class="col-md-3 panel panel-default">
+                <div class="panel-heading">
+                    <p><strong>LOCATION</strong></p>
+                </div>
+                <div class="panel-body">
+                    <p><strong>Dog Haüs</strong></p>
+                    <p>900 Navasota St</p>
+                    <p>Austin, TX  78702</p>
+                    <p>512.444.WOOF</p>
+                </div>
+
+                <div class="panel-heading">
+                    <p><strong>COMMENTS/QUESTIONS</strong></p>
+                </div>
+                <div class="panel-body">
+                    <form class="form-horizontal">
+                        <fieldset>
+                            <div class="form-group">
+                                <label for="inputName">Name</label>
+                                <input class="form-control" type="text" id="inputName" placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputMessage">Message</label>
+                                <textarea class="form-control" id="inputMessage" rows="8" placeholder="Leave us a Message Here"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Send</button>
+                            </div>
+                        </fieldset> 
+                    </form>
+                </div>
+                    
+            </div>
         </div>
     </div>
 
