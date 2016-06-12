@@ -35,6 +35,11 @@
   General Custom Styles
   =====================================
 */
+
+body {
+	font-family: 'Raleway', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
 #bigContainer {
 	border-style: solid;
 	border-width: 2px;
