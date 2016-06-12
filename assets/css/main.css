@@ -37,14 +37,15 @@
 */
 #bigContainer {
 	border-style: solid;
-	border-width: 1px;
-	border-color: #333;
+	border-width: 2px;
+	border-color: #009796;
 	min-height: 80%;
 	height: auto;
 	/* Negative indent footer by its height */
 	margin: 0 auto;
 	/* Pad bottom by footer height */
 	padding: 0 0 60px;
+	border-radius: 5px;
 }
 
 /*
