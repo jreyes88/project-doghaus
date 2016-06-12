@@ -26,8 +26,14 @@
 	padding-bottom: auto;
 }
 
-.navbar-nav>.active>a {
-	background-color: blue;
+#activeButton {
+	background-color: #e7e7e7;
+	border-radius: 5px;
+}
+
+.navButton:hover {
+	background-color: #00ace8;
+	border-radius: 5px;
 }
 
 /*
@@ -116,7 +122,21 @@ body {
 */
 .fadingDogPics {
 	margin: 0;
-	padding: auto;
+	padding-left: 25%;
+	padding-right: 25%;
+}
+
+.stick-track {
+	padding-left: auto;
+	padding-right: auto;
+}
+
+.carouselImage {
+	width: 75%;
+	margin-left: 12%;
+}
+.slick-dots {
+	width: 50%;
 }
 
 /*
