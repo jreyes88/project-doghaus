@@ -13,6 +13,18 @@ $("document").ready(function(){
 		}).done(function(response){
 			var currentWeatherCondition = response.list[0].weather[0].description;
 
+			function titleCase(str) {  
+  			str = str.toLowerCase().split(' ');
+ 			 for(var i = 0; i < str.length; i++){
+   			 	str[i] = str[i].split('');
+    			str[i][0] = str[i][0].toUpperCase(); 
+    			str[i] = str[i].join('');
+ 				 }
+  				return str.join(' ');
+				};
+
+			var curWeaConCaps = titleCase(currentWeatherCondition);
+
 			var kelvinTemp = response.list[0].main.temp;
 	        
 	        function convertFah() {
@@ -22,7 +34,7 @@ $("document").ready(function(){
 	            var finalTempRounded = Math.floor(finalTemp);
 	            var finalTempString = finalTempRounded.toString();
 
-	            $(".weatherDiv").html("<p class='text-muted'> Current Weather : " + currentWeatherCondition +  ". Current Temperature : " + finalTempString + " "+ "&#x2109"+  "</p>");
+	            $(".weatherDiv").html("<p class='text-muted'> Weather Conditions at Dog Haüs : " + curWeaConCaps +  ", " + finalTempString + " "+ "&#x2109"+  ".</p>");
 	        }
 
 	        convertFah();//call conversion function
