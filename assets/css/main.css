@@ -26,8 +26,14 @@
 	padding-bottom: auto;
 }
 
-.navbar-nav>.active>a {
-	background-color: blue;
+#activeButton {
+	background-color: #e7e7e7;
+	border-radius: 5px;
+}
+
+.navButton:hover {
+	background-color: #00ace8;
+	border-radius: 5px;
 }
 
 /*
@@ -51,6 +57,15 @@ body {
 	/* Pad bottom by footer height */
 	padding: 0 0 60px;
 	border-radius: 5px;
+}
+
+/*Location Page*/
+.row {
+	margin-left: 60px;
+	margin-top: 50px;
+}
+.col-md-3 {
+	margin-left: 20px;
 }
 
 /*
@@ -107,7 +122,21 @@ body {
 */
 .fadingDogPics {
 	margin: 0;
-	padding: auto;
+	padding-left: 25%;
+	padding-right: 25%;
+}
+
+.stick-track {
+	padding-left: auto;
+	padding-right: auto;
+}
+
+.carouselImage {
+	width: 75%;
+	margin-left: 12%;
+}
+.slick-dots {
+	width: 50%;
 }
 
 /*
@@ -116,7 +145,7 @@ body {
   =====================================
 */
 #map {
-	width: 560px;
-	height: 360px;
+	width: 600px;
+	height: 580px;
 	background-color: #333;
 }
