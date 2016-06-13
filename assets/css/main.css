@@ -149,3 +149,28 @@ body {
 	height: 580px;
 	background-color: #333;
 }
+
+/*
+	===========================
+	Amenities Gallery CSS
+	===========================
+*/
+
+.photoGallery{
+	width:100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-bottom: 15px;
+}
+
+.topGalleryImg{
+	display: inline;
+	height: 100%;
+	width: 100%;
+	/* what did you work on, what are you working on, what is blocking your progress, is anything broken */
+}
+
+.photoGallery div{
+	overflow: none;
+}
+
