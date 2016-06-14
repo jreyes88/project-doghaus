@@ -70,4 +70,11 @@ $("document").ready(function(){
     transition: function(url){ window.location.href = url; }
   });
 
+	/***	BURGER MENU		***/
+
+	$(".burgerMenu").hide();
+	$(".hamburger").on("click", function(){
+		$(".burgerMenu").slideToggle("slow");
+	});
+
 });// End document.ready
