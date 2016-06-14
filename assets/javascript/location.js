@@ -1,5 +1,29 @@
 $("document").ready(function(){
 
+	// Firebase for Comment Submission
+	var commentData = new Firebase("https://project-doghaus.firebaseio.com/");
+
+	$("#submitButton").on("click", function() {
+		
+		// Get the input values
+		var commentName = $('#inputName').val().trim();
+		var commentComment = $('#inputMessage').val().trim();
+
+		// Log the Bidder and Price (Even if not the highest)
+		console.log(commentName);
+		console.log(commentComment);
+
+		commentData.set({
+			highBidder: commentName,
+			highPrice: commentComment
+		});
+
+		// Return False to allow "enter"
+		return false;
+	});
+
+
+	// Map
 	function initMap() {
 		var myLatLng = {lat: 30.26716, lng: -97.72662};
 
