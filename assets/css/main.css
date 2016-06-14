@@ -207,3 +207,26 @@ p {
 	float: left;
 	position: absolute;
 }
+
+/*
+	===========================
+	Amenities Gallery CSS
+	===========================
+*/
+
+.photoGallery{
+	width:100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-bottom: 15px;
+}
+
+.topGalleryImg{
+	display: inline;
+	height: 100%;
+	width: 100%;
+}
+
+.photoGallery div{
+	overflow: none;
+}
