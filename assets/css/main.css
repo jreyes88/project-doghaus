@@ -132,8 +132,9 @@ body {
 }
 
 .carouselImage {
-	width: 75%;
-	margin-left: 12%;
+	width: auto;
+	height: auto;
+	max-width: 600px;
 }
 .slick-dots {
 	width: 50%;
