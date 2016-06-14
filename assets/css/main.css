@@ -55,7 +55,7 @@ body {
 	/* Negative indent footer by its height */
 	margin: 0 auto;
 	/* Pad bottom by footer height */
-	padding: 0 0 60px;
+	padding: 0px;
 	border-radius: 5px;
 }
 
@@ -141,11 +141,69 @@ body {
 
 /*
   =====================================
-  Map
+  Location Page
+  =====================================
+*/
+#navigationPage {
+	padding: 0;
+	margin: 0;
+}
+
+.locationInfo {
+	width: 400px;
+	display: inline-block;
+	float: right;
+	padding: 0;
+	margin-top: 30px;
+	margin-right: 5%;
+}
+
+p {
+	margin: 0;
+}
+
+.panel-heading {
+	padding: 5px 10px 5px 10px;
+	margin: 0;
+}
+
+.panel-body {
+	padding: 5px 10px 5px 10px;
+	margin: 0;
+}
+
+.form-horizontal {
+	padding: 5px 10px 5px 10px;
+	margin: 0px 5px;
+}
+
+#inputMessage {
+	height: 114px;
+}
+
+#submitButton {
+	color: #777;
+	background-color: #e7e7e7
+}
+
+#submitButton:hover {
+	background-color: #00ace8;
+	color: #333;
+}
+
+/*
+  =====================================
+  Location Page: Map
   =====================================
 */
 #map {
 	width: 600px;
-	height: 580px;
+	height: 450px;
 	background-color: #333;
+	padding: 0;
+	margin-top: 30px;
+	margin-left: 5%;
+	display: inline-block;
+	float: left;
+	position: absolute;
 }

@@ -71,16 +71,11 @@
     <!-- Main Page Content -->
     <div class= "container" id="bigContainer">
 
-        <!-- Header -->
-        <header>
-            <br>
-            <!--  <h1 class="text-center">Location</h1> -->
-        </header>
-
         <!-- Map -->
-        <div class="row" id="locationDiv">
-            <div class="col-md-8" id="map"></div>
-            <div class="col-md-3 panel panel-default">
+        <div class="row" id="navigationPage">
+            <div id="map"></div>
+            <div class="col-md-4 panel panel-default locationInfo">
+
                 <div class="panel-heading">
                     <p><strong>LOCATION</strong></p>
                 </div>
@@ -106,7 +101,7 @@
                                 <textarea class="form-control" id="inputMessage" rows="8" placeholder="Leave us a Message Here"></textarea>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-primary">Send</button>
+                                <button type="submit" class="btn navButton" id="submitButton">Send</button>
                             </div>
                         </fieldset> 
                     </form>
