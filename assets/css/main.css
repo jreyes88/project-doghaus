@@ -206,7 +206,7 @@ p {
 	margin-left: 5%;
 	display: inline-block;
 	float: left;
-	position: absolute;
+	/*position: absolute;*/
 }
 
 /*
@@ -254,5 +254,4 @@ p {
 
 .burgerMenu li {
 	color:black;
-
 }
