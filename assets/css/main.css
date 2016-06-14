@@ -231,3 +231,28 @@ p {
 .photoGallery div{
 	overflow: none;
 }
+
+/*
+	=======================
+	Burger Menu CSS
+	=======================
+*/
+
+.burgerMenu{
+	background-color: #ddd;
+	float:right;
+	border-radius:4px;
+}
+
+.burgerMenu ul{
+	list-style-type: none;
+	padding-left:10px;
+	padding-right:10px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.burgerMenu li {
+	color:black;
+
+}
