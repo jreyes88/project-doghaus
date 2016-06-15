@@ -132,8 +132,8 @@ body {
 }
 
 .carouselImage {
-	width: auto;
-	height: auto;
+	width: 100%;
+	height: 100%;
 	max-width: 600px;
 }
 .slick-dots {
@@ -255,3 +255,39 @@ p {
 .burgerMenu li {
 	color:black;
 }
+
+/*
+	======================
+	Media Queries
+	======================
+*/
+
+/* using footer temporarily to let you know which media width is taking effect */
+@media(max-width:992px){
+	#footer{
+		background-color: #6b9;
+	}
+	/* STYLE HERE */
+
+} /* end 769px-992px */
+
+@media(max-width: 768px){
+	#footer{
+		background-color: #59a;
+	}
+		/* STYLE HERE */
+
+	} /* End 481-768px */
+
+@media(max-width: 480px){
+
+	#footer{
+		background-color: #a35;
+	}
+	/* STYLE HERE */
+
+} /* End < 480px */
+
+
+
+
