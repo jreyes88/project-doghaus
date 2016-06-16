@@ -156,6 +156,7 @@ body {
   Location Page
   =====================================
 */
+
 #navigationPage {
 	padding: 0;
 	margin: 0;
@@ -328,9 +329,27 @@ p {
 		width:80%;
 		padding-bottom: 15px;
 	}
+
 	.placeColumn{
 		display: none;
 	}
+
+	/* having problems from here */
+
+	.locContentDiv{
+		width:100%;
+		display:block;
+	}
+
+	#map{
+		width:100%;
+	}
+
+	.locationInfo{
+		float:none;
+		display:inline;
+	}
+	/* until here */
 
 	} /* End 481-768px */
 
