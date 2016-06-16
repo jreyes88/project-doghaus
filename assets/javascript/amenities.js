@@ -54,11 +54,10 @@ $("document").ready(function(){
 				console.log(eventName);
 				console.log(groupURL);
 
-				$("#eventResults").html(
-					$("#1").html(groupName),
-					$("#2").html(eventName),
-					$("#3").html(groupURL)
-				).appendTo("#eventResults");
+
+				$("#meetupTable > tbody").append(
+					"<tr><td>" + groupName + "</td><td>" + eventName + "</td><td>" + "<a href='" + groupURL + "'>Link" + "</a>" + "</td></tr"
+				);
 			};
 			//console.log(response.results[0].group.name);
 
