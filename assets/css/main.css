@@ -162,10 +162,13 @@ body {
 }
 
 .locationInfo {
+	max-width: 260px;
+	min-width: 200px;
 	width: 30%;
 	display: inline-block;
 	float: right;
 	padding: 0;
+	padding-right:20px;
 	margin-top: 30px;
 	margin-right: 3%;
 	margin-left: 2%;
@@ -210,15 +213,15 @@ p {
   =====================================
 */
 #map {
-	max-width: 640px;
+	max-width: 600px;
 	max-height:480px;
-	width: 60%;
-	height: 60%;
+	width: 56%;
+	height: 56%;
 	background-color: #333;
 	padding: 0;
 	margin-top: 30px;
 	margin-left: 3%;
-	margin-right: 2%;
+	margin-right: 6%;
 	display: inline-block;
 	float: left;
 	position: absolute;
@@ -300,6 +303,9 @@ p {
 	}
 	.placeColumn{
 		display: none;
+	}
+	#map{
+		width:46%;
 	}
 
 } /* end 769px-992px */
