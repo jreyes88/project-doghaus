@@ -277,7 +277,6 @@ p {
 	.placeColumn{
 		display: none;
 	}
-	/* STYLE HERE */
 
 } /* end 769px-992px */
 
@@ -285,7 +284,23 @@ p {
 	#footer{
 		background-color: #59a;
 	}
-		/* STYLE HERE */
+
+	.photoGallery{
+		display:block;
+	}
+
+	.topGalleryImg{
+		max-width: 999px;
+	}
+
+	.imageCol{
+		margin: 0 10%;
+		width:80%;
+		padding-bottom: 15px;
+	}
+	.placeColumn{
+		display: none;
+	}
 
 	} /* End 481-768px */
 
