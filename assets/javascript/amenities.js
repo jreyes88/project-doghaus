@@ -6,32 +6,33 @@ $("document").ready(function(){
 	
 // **FUNCTIONS
 	// CORS REQUEST FUNCTIONS TO RESOLVE CROSS-ORIGIN ACCESS ERRORS ON API SEARCH RESULTS
-	function meetupCORSRequest(method, url){
-		var xhr = new XMLHttpRequest();
-		if ("withCredentials" in xhr) {
-			xhr.open(method, URL, true);
-		} else if (typeof XDomainRequest !="undefined") {
-			xhr = new XDomainRequest();
-			xhr.open(method, URL);
-		} else {
-			xhr = null;
-		}
-		return xhr;
-	};
+	// function meetupCORSRequest(method, url){
+	// 	var xhr = new XMLHttpRequest();
+	// 	if ("withCredentials" in xhr) {
+	// 		xhr.open(method, URL, true);
+	// 	} else if (typeof XDomainRequest !="undefined") {
+	// 		xhr = new XDomainRequest();
+	// 		xhr.open(method, URL);
+	// 	} else {
+	// 		xhr = null;
+	// 	}
+	// 	return xhr;
+	// };
 
-	function makeCORSRequest() {
-		var meetUpURL = "https://api.meetup.com/2/open_events?zip=78702&and_text=False&offset=0&format=json&limited_events=False&topic=dogs&photo-host=public&page=10&radius=10.0&desc=False&status=upcoming&sig_id=206912518&sig=58c03d72bba43d142d9132fa375b4e2b60ea30b4";
-		var xhr = meetupCORSRequest('GET', meetUpURL);
+	// function makeCORSRequest() {
+	// 	var meetUpURL = "https://api.meetup.com/2/open_events?zip=78702&and_text=False&offset=0&format=json&limited_events=False&topic=dogs&photo-host=public&page=10&radius=10.0&desc=False&status=upcoming&sig_id=206912518&sig=58c03d72bba43d142d9132fa375b4e2b60ea30b4";
+	// 	var xhr = meetupCORSRequest('GET', meetUpURL);
 
-		if (!xhr) {
-			console.log("CORS not supported");
-			return;
-		}
-	meetUpEvents(meetUpURL)
+	// 	if (!xhr) {
+	// 		console.log("CORS not supported");
+	// 		return;
+	// 	}
+	// 	xhr.send();
+	//meetUpEvents(meetUpURL)
 	//	xhr.onload = function(){
 	//		meetUpEvents()
 	//	};
-	};
+	//};
 	
 	// FUNCTION TO PULL MEETUP EVENT RESULTS
 	var meetUpEvents = function(meetUpURL) {
@@ -64,6 +65,6 @@ $("document").ready(function(){
 		});
 	};
 
-	makeCORSRequest();
-	//meetUpEvents();
+	//makeCORSRequest();
+	meetUpEvents(meetUpURL);
 });
