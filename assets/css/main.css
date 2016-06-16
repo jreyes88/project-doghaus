@@ -162,12 +162,16 @@ body {
 }
 
 .locationInfo {
-	width: 400px;
+	max-width: 260px;
+	min-width: 200px;
+	width: 30%;
 	display: inline-block;
 	float: right;
 	padding: 0;
+	padding-right:20px;
 	margin-top: 30px;
-	margin-right: 5%;
+	margin-right: 3%;
+	margin-left: 2%;
 }
 
 p {
@@ -209,15 +213,18 @@ p {
   =====================================
 */
 #map {
-	width: 600px;
-	height: 450px;
+	max-width: 600px;
+	max-height:480px;
+	width: 56%;
+	height: 56%;
 	background-color: #333;
 	padding: 0;
 	margin-top: 30px;
-	margin-left: 5%;
+	margin-left: 3%;
+	margin-right: 6%;
 	display: inline-block;
 	float: left;
-	/*position: absolute;*/
+	position: absolute;
 }
 
 /*
@@ -243,6 +250,11 @@ p {
 	overflow: none;
 }
 
+/* Amenities h3 indent */
+#amenitiesLists h3{
+	padding-left: 15px;
+}
+
 /*
 	=======================
 	Burger Menu CSS
@@ -253,6 +265,9 @@ p {
 	background-color: #ddd;
 	float:right;
 	border-radius:4px;
+	position: absolute;
+	z-index: 9;
+	right:0;
 }
 
 .burgerMenu ul{
@@ -288,6 +303,9 @@ p {
 	}
 	.placeColumn{
 		display: none;
+	}
+	#map{
+		width:46%;
 	}
 
 } /* end 769px-992px */
