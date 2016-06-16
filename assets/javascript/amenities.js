@@ -38,15 +38,23 @@ $("document").ready(function(){
 			method: 'GET'
 		})
 		.done(function(response) {
-			var eventResults = response.results[0].group.name;
+			var eventResults = response.results;
 			console.log(eventResults);
 
-			//for (var i = 0; i < results.length; i++) {
-				//results[i];
-			//	console.log(results[i]);
-			//}
-			//console.log(response);
-			//console.log(response.results[12]);
+
+			for (var i = 0; i < eventResults.length; i++) {
+				var groupName = eventResults[i].group.name;
+				var groupURL = eventResults[i].event_url;
+				var eventName = eventResults[i].name;
+				console.log(groupName);
+				console.log(eventName);
+				console.log(groupURL);
+
+
+				$("#meetupTable > tbody").append(
+					"<tr><td>" + groupName + "</td><td>" + eventName + "</td><td>" + "<a href='" + groupURL + "'>Link" + "</a>" + "</td></tr"
+				);
+			};
 
 		});
 	};
