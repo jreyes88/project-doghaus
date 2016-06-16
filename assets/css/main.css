@@ -162,12 +162,13 @@ body {
 }
 
 .locationInfo {
-	width: 400px;
+	width: 30%;
 	display: inline-block;
 	float: right;
 	padding: 0;
 	margin-top: 30px;
-	margin-right: 5%;
+	margin-right: 3%;
+	margin-left: 2%;
 }
 
 p {
@@ -209,15 +210,18 @@ p {
   =====================================
 */
 #map {
-	width: 600px;
-	height: 450px;
+	max-width: 640px;
+	max-height:480px;
+	width: 60%;
+	height: 60%;
 	background-color: #333;
 	padding: 0;
 	margin-top: 30px;
-	margin-left: 5%;
+	margin-left: 3%;
+	margin-right: 2%;
 	display: inline-block;
 	float: left;
-	/*position: absolute;*/
+	position: absolute;
 }
 
 /*
@@ -253,6 +257,9 @@ p {
 	background-color: #ddd;
 	float:right;
 	border-radius:4px;
+	position: absolute;
+	z-index: 9;
+	right:0;
 }
 
 .burgerMenu ul{
