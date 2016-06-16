@@ -278,16 +278,6 @@ p {
 	#footer{
 		background-color: #6b9;
 	}
-	.topGalleryImg{
-		max-width: 326px;
-	}
-	.imageCol{
-		display: inline-block;
-		padding-bottom: 15px;
-	}
-	.placeColumn{
-		display: none;
-	}
 	/* STYLE HERE */
 
 } /* end 769px-992px */

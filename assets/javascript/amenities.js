@@ -1,11 +1,8 @@
 $("document").ready(function(){
 
-// **GLOBAL VARIABLES
-	// VARIABLE DEFINING MEETUP.COM API URL
+	//var meetUpAPIKey = "3f532b1a5c6866f6c42697955472d6d";
 	var meetUpURL = "https://api.meetup.com/2/open_events?zip=78702&and_text=False&offset=0&format=json&limited_events=False&topic=dogs&photo-host=public&page=10&radius=10.0&desc=False&status=upcoming&sig_id=206912518&sig=58c03d72bba43d142d9132fa375b4e2b60ea30b4";
 	
-// **FUNCTIONS
-	// CORS REQUEST FUNCTIONS TO RESOLVE CROSS-ORIGIN ACCESS ERRORS ON API SEARCH RESULTS
 	function meetupCORSRequest(method, url){
 		var xhr = new XMLHttpRequest();
 		if ("withCredentials" in xhr) {
@@ -33,7 +30,6 @@ $("document").ready(function(){
 	//	};
 	};
 	
-	// FUNCTION TO PULL MEETUP EVENT RESULTS
 	var meetUpEvents = function(meetUpURL) {
 		//console.log('works')
 
@@ -42,25 +38,15 @@ $("document").ready(function(){
 			method: 'GET'
 		})
 		.done(function(response) {
-			var eventResults = response.results;
-			
+			var eventResults = response.results[0].group.name;
 			console.log(eventResults);
 
-			for (var i = 0; i < eventResults.length; i++) {
-				var groupName = eventResults[i].group.name;
-				var groupURL = eventResults[i].event_url;
-				var eventName = eventResults[i].name;
-				console.log(groupName);
-				console.log(eventName);
-				console.log(groupURL);
-
-				$("#eventResults").html(
-					$("#1").html(groupName),
-					$("#2").html(eventName),
-					$("#3").html(groupURL)
-				).appendTo("#eventResults");
-			};
-			//console.log(response.results[0].group.name);
+			//for (var i = 0; i < results.length; i++) {
+				//results[i];
+			//	console.log(results[i]);
+			//}
+			//console.log(response);
+			//console.log(response.results[12]);
 
 		});
 	};
