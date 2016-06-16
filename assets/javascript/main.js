@@ -34,7 +34,7 @@ $("document").ready(function(){
 	            var finalTempRounded = Math.floor(finalTemp);
 	            var finalTempString = finalTempRounded.toString();
 
-	            $(".weatherDiv").html("<p class='text-muted'> Weather Conditions at Dog Haüs : " + "<p class='text-muted'>" +  curWeaConCaps + ", " + finalTempString + " "+ "&#x2109"+  ".</p>" + "</p>");
+	            $(".weatherDiv").html("<p class='text-muted'> Weather Conditions at Dog Haüs : " +  curWeaConCaps + ", " + finalTempString + " "+ "&#x2109" + "</p>");
 	        }
 
 	        convertFah();//call conversion function
