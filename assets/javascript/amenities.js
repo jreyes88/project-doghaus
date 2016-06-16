@@ -38,7 +38,7 @@ $("document").ready(function(){
 			method: 'GET'
 		})
 		.done(function(response) {
-			var eventResults = response.results[0].group.name;
+			var eventResults = response.results;
 			console.log(eventResults);
 
 
