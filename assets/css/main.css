@@ -247,6 +247,11 @@ p {
 	overflow: none;
 }
 
+/* Amenities h3 indent */
+#amenitiesLists h3{
+	padding-left: 15px;
+}
+
 /*
 	=======================
 	Burger Menu CSS
