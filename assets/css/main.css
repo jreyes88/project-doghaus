@@ -104,6 +104,11 @@ body {
 }
 
 /* Social Media */
+#socialMediaIcons {
+	margin: 0;
+	padding: 0;
+	width: 128px;
+}
 .socialMediaDiv {
 	float: right;
 	width: 25%;
@@ -294,7 +299,34 @@ p {
 	#footer{
 		background-color: #6b9;
 	}
-
+	.weatherDiv {
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+	}
+	.copyrightDiv {
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+	}
+	.socialMediaDiv {
+		width: 100%;
+		display: inline-block;
+		margin: 0 auto;
+	}
+	#footer-text {
+		float: none;
+	}
+	.socialMediaImages {
+		float: none;
+		display: inline-block;
+		margin: 0 auto;
+	}
+	#socialMediaIcons {
+		margin: 0 auto;
+		padding: 0;
+		width: 128px;
+	}
 	.topGalleryImg{
 		max-width: 326px;
 	}
@@ -314,6 +346,34 @@ p {
 @media(max-width: 768px){
 	#footer{
 		background-color: #59a;
+	}
+	.weatherDiv {
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+	}
+	.copyrightDiv {
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+	}
+	.socialMediaDiv {
+		width: 100%;
+		display: inline-block;
+		margin: 0 auto;
+	}
+	#footer-text {
+		float: none;
+	}
+	.socialMediaImages {
+		float: none;
+		display: inline-block;
+		margin: 0 auto;
+	}
+	#socialMediaIcons {
+		margin: 0 auto;
+		padding: 0;
+		width: 128px;
 	}
 
 	.photoGallery{
@@ -358,7 +418,34 @@ p {
 	#footer{
 		background-color: #a35;
 	}
-	/* STYLE HERE */
+	.weatherDiv {
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+	}
+	.copyrightDiv {
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+	}
+	.socialMediaDiv {
+		width: 100%;
+		display: inline-block;
+		margin: 0 auto;
+	}
+	#footer-text {
+		float: none;
+	}
+	.socialMediaImages {
+		float: none;
+		display: inline-block;
+		margin: 0 auto;
+	}
+	#socialMediaIcons {
+		margin: 0 auto;
+		padding: 0;
+		width: 128px;
+	}
 
 } /* End < 480px */
 
