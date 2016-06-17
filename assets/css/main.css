@@ -41,7 +41,6 @@
   General Custom Styles
   =====================================
 */
-
 body {
 	font-family: 'Raleway', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
@@ -67,6 +66,7 @@ body {
 .col-md-3 {
 	margin-left: 20px;
 }
+
 /*
   =====================================
   Footer
@@ -161,7 +161,6 @@ body {
   Location Page
   =====================================
 */
-
 #navigationPage {
 	padding: 0;
 	margin: 0;
@@ -174,7 +173,7 @@ body {
 	display: inline-block;
 	float: right;
 	padding: 0;
-	padding-right:20px;
+	padding-right: 0px;
 	margin-top: 30px;
 	margin-right: 3%;
 	margin-left: 2%;
@@ -186,6 +185,7 @@ p {
 
 .panel-heading {
 	padding: 5px 10px 5px 10px;
+	width: 100%;
 	margin: 0;
 }
 
@@ -234,11 +234,10 @@ p {
 }
 
 /*
-	===========================
+	=====================================
 	Amenities Gallery CSS
-	===========================
+	=====================================
 */
-
 .photoGallery{
 	width:100%;
 	margin-left: 0px;
@@ -262,11 +261,10 @@ p {
 }
 
 /*
-	=======================
+	=====================================
 	Burger Menu CSS
-	=======================
+	=====================================
 */
-
 .burgerMenu{
 	background-color: #ddd;
 	float:right;
@@ -287,37 +285,65 @@ p {
 .burgerMenu li {
 	color:black;
 }
+
 /* 
-	======================
+	=====================================
 	Reservation Style
+	=====================================
 */
-#onHold {
-	/*background-color: #666;*/
-	width: 400px;
+#overallReservation{
+	width: 100%;
 	height: 275px;
-	border-left: 100px;
-	/*float: right;*/
 }
 
-
-.dateSub{
-	margin-bottom: 250px
+.dateSub {
+	width: 50%;
+	height: 275px;
+	padding: 0 15px 250px 0;
+	margin: 0;
+	float: left;
 }
 
-.reservationBox
-    {
-    display: block;
-    /*background-color: rgb(200, 200, 200);*/
+.ui-datepicker-calendar {
+	padding: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000;
+	background-color: #fff;
+	border-radius: 5px;
+}
+.ui-datepicker-title {
+	background-color: #fff;
+}
+
+.ui-datepicker-header {
+	background-color: #fff;
+}
+
+.reservationBox {
+    display: inline-block;
     width: 200px;
-    float: left;
     padding: 10px;
     border-bottom: 300px, solid, #fff;
-    }
+}
 
-.title
-    {
+#roomSelector {
+	height: 275px;
+	width: 25%;
+	margin: 0;
+	float: left;
+}
+
+#onHold {
+	width: 25%;
+	height: 275px;
+	margin: 0;
+	float: left;
+}
+
+.title {
     font-weight: bold;
-    }
+}
 
 .phoneNumInputs{
 	display:inline;
@@ -330,11 +356,10 @@ p {
 }
 
 /*
-	======================
+	=====================================
 	Media Queries
-	======================
+	=====================================
 */
-
 /* using footer temporarily to let you know which media width is taking effect */
 @media(max-width:992px){
 	#footer{
@@ -382,7 +407,6 @@ p {
 	#map{
 		width:46%;
 	}
-
 } /* end 769px-992px */
 
 @media(max-width: 768px){
@@ -489,9 +513,4 @@ p {
 		padding: 0;
 		width: 128px;
 	}
-
 } /* End < 480px */
-
-
-
-
