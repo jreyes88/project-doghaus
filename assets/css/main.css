@@ -287,6 +287,37 @@ p {
 .burgerMenu li {
 	color:black;
 }
+/* 
+	======================
+	Reservation Style
+*/
+#onHold {
+	/*background-color: #666;*/
+	width: 400px;
+	height: 275px;
+	border-left: 100px;
+	/*float: right;*/
+}
+
+
+.dateSub{
+	margin-bottom: 250px
+}
+
+.reservationBox
+    {
+    display: block;
+    /*background-color: rgb(200, 200, 200);*/
+    width: 200px;
+    float: left;
+    padding: 10px;
+    border-bottom: 300px, solid, #fff;
+    }
+
+.title
+    {
+    font-weight: bold;
+    }
 
 /*
 	======================
