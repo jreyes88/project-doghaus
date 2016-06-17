@@ -17,11 +17,14 @@
     <!-- Link to Animsition JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
 
-    <!-- Link to validator.js hosted library unavailable -->
-    <script src="assets/javascript/valid/src/validator.js"></script>
+    <!-- Link to Slick Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
 
-    <!-- Link to our use case of validator js -->
-    <script src="assets/javascript/validate.js"></script>
+    <!-- Link to our JS -->
+    <script src="assets/javascript/main.js"></script>
+
+    <!-- Link to carousel JS -->
+    <script src="assets/javascript/carousel.js"></script>
 
     <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -29,12 +32,13 @@
     <!-- Link to Animsition CSS -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
 
-    <!-- Link to our JS -->
-    <script src="assets/javascript/main.js"></script>
+   <!-- Link to Slick Carousel CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"> 
 
     <!-- Link to CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <title>Dog Haüs - Reservations</title>
+    <title>Dog Haüs - Home</title>
 </head>
 
 <body>
@@ -46,7 +50,7 @@
 
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed hamburger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                   <button type="button" class="navbar-toggle collapsed hamburger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -55,10 +59,10 @@
                     <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt ="Dog Haus Logo" id="logo"></a>
                 </div>
 
-                 <!-- Hamburger Menu Div -->
+                <!-- Hamburger Menu Div -->
                 <div class="burgerMenu">
                   <ul>
-                    <a href="index.html"><li class="text-center">Home</li></a>
+                    <a href="reservations.html"><li class="text-center">Reservations</li></a>
                     <a href="location.html"><li class="text-center">Location</li></a>
                     <a href="amenities.html"><li class="text-center">Amenities</li></a>
                   </ul>
@@ -67,10 +71,10 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="navButton"><a href="index.html" class="animsition-link">Home</a></li>
-                        <li class="navButton" id="activeButton"><a href="reservations.html" class="animsition-link">Reservations</a></li>
-                        <li class="navButton" ><a href="location.html" class="animsition-link">Location</a></li>
-                        <li class="navButton" ><a href="amenities.html" class="animsition-link">Amenities</a></li>
+                        <li class="navButton" id="activeButton"><a href="index.html" class="animsition-link">Home</a></li>
+                        <li class="navButton" ><a href="reservations.html" class="animsition-link">Reservations</a></li>
+                        <li class="navButton"><a href="location.html" class="animsition-link">Location</a></li>
+                        <li class="navButton"><a href="amenities.html" class="animsition-link">Amenities</a></li>
                     </ul>
                 </div>
             </div>
@@ -78,59 +82,39 @@
     </nav>
 
     <!-- Main Page Content -->
-    <div class= "container" id="bigContainer">
+    <div class="container" id="bigContainer">
+
         <!-- Header -->
         <header>
-            <h2 class="text-center">Reserve your sweet suite home today!</h2>
+            <h2 class="text-center">Welcome to the Dog Haüs!</h2>
         </header>
 
-    <div class="dateSub">
-        <div class="reservationBox">
-             <div class="title">Click your Check in</div>
-             <input type="text" id="arr_date">
+        <!-- Picture Gallery -->
+        <div class="fadingDogPics">
+            <div><img src="assets/images/animal1.jpg" class="carouselImage"></div>
+            <div><img src="assets/images/animal2.jpg" class="carouselImage"></div>
+            <div><img src="assets/images/animal3.jpg" class="carouselImage"></div>
+            <div><img src="assets/images/animal4.jpg" class="carouselImage"></div>
         </div>
 
-        <div class="reservationBox">
-             <div class="title">Click your Check Out</div>
-             <input type="text" id="dep_date">
-        </div>
-     </div>
-    <!--End of the select dates-->
-    <!--This selects the room value.-->
-   <h2>Room Selection</h2>
-      <form id="room">
-        <input type="radio" name="room" value=100> Standard Room @ $100<br>
-        <input type="radio" name="room" value=250> Deluxe Suite @ $250<br>
-      </form>
-      <button>Room Estimate</button>
-        <div class="form-group">
-             <p id="res"></p>
-        </div>
-        
-    <!--This is a form for entering data to confim reservations-->
-    <!--User validation use here-->
-        
-        <div id="onHold">
-           <h2>Reserve your room</h2>
-           <form>
-            First name:<br>
-           <input type="text" name="firstname">
-                  <br>
-                  Last name:<br>
-                  <input type="text" name="lastname"><br>
-                  Email:<br>
-               <input type="text" name="email"><br>
-                Phone Number:<br>
-                  <div class="phoneNumInputs">
-                    <input type="text" name="phoneNumber" maxlength="3" class="threeNum text-center">
-                    <input type="text" name="phoneNumber" maxlength="3" class="threeNum text-center">
-                    <input type="text" name="phoneNumber" maxlength="4" class="fourNum text-center">
-                  </div>
-                  <br>
-               <input type="submit" value="Submit">
-            </form>
-        </div>
 
+        <!-- Some Description Stuff -->
+        <div class="container">
+            <div>
+                <p class>The Dog Haüs is a new hotel that is built from the ground up with travelling dog-owners in mind. We are located in Austin, Texas. Our city has so much to offer to you and your four-legged friend, and we want to help y'all make the most of your stay here.</p>
+            </div>
+            <div>
+                <img src="assets/images/dog_icon.png" alt="Dog Icon" class="paragraphDogIcon">
+            </div>
+            <div>
+                <p>Are you looking to jog around beautiful Lady Bird Lake in the morning? We are a few short minutes' stroll from the trail head. Does your pooch need a kind hand for grooming? We work with local dog groomers to primp, pamper, and otherwise spoil your best friend. Or, do you want to be able to go enjoy some live music and libations without worrying about your pup? We can arrange for experienced and caring dog-sitters to keep your dog exercised and happy.</p>
+            </div>
+                <img src="assets/images/dog_icon_left.png" alt="Dog Icon" class="paragraphDogIcon">
+            <div>
+                <h4 class="text-center">We hope you wind up in the Dog Haüs!</h4>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <div class="container">
@@ -141,24 +125,21 @@
                     <p class="text-muted" id="footer-text">&copy 2016 Dog Haus Industries</p>
                 </div>
                 <div class="socialMediaDiv">
-                    <a href="https://twitter.com/zilkerbark">
-                        <img src="assets/images/twitter_icon.png" alt="Twitter Icon" class="socialMediaImages">
-                    </a>
-                    <a href="https://www.instagram.com/zilkerbark/">
-                        <img src="assets/images/insta_icon.png" alt="Instagram Icon" class="socialMediaImages">
-                    </a>
-                    <a href="https://www.facebook.com/zilkerbark/">
-                        <img src="assets/images/facebook_icon.png" alt="Facebook Icon" class="socialMediaImages">
-                    </a>
+                    <div id="socialMediaIcons">
+                        <a href="https://twitter.com/zilkerbark">
+                            <img src="assets/images/twitter_icon.png" alt="Twitter Icon" class="socialMediaImages">
+                        </a>
+                        <a href="https://www.instagram.com/zilkerbark/">
+                            <img src="assets/images/insta_icon.png" alt="Instagram Icon" class="socialMediaImages">
+                        </a>
+                        <a href="https://www.facebook.com/zilkerbark/">
+                            <img src="assets/images/facebook_icon.png" alt="Facebook Icon" class="socialMediaImages">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div><!-- End animsition -->
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
-<script src="assets/javascript/jquery-ui.js"></script>
-<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
-<script src="assets/javascript/reservation.js"></script>
 </body>
 </html>
