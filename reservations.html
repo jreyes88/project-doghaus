@@ -17,6 +17,12 @@
     <!-- Link to Animsition JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
 
+    <!-- Link to validator.js hosted library unavailable -->
+    <script src="assets/javascript/valid/src/validator.js"></script>
+
+    <!-- Link to our use case of validator js -->
+    <script src="assets/javascript/validate.js"></script>
+
     <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -112,14 +118,17 @@
                   <br>
                   Last name:<br>
                   <input type="text" name="lastname"><br>
-                   Phone Number:<br>
-                  <input type="text" name="phoneNumber">
-                  <br>
                   Email:<br>
-               <input type="text" name="email">
+               <input type="text" name="email"><br>
+                Phone Number:<br>
+                  <div class="phoneNumInputs">
+                    <input type="text" name="phoneNumber" maxlength="3" class="threeNum text-center">
+                    <input type="text" name="phoneNumber" maxlength="3" class="threeNum text-center">
+                    <input type="text" name="phoneNumber" maxlength="4" class="fourNum text-center">
+                  </div>
+                  <br>
                <input type="submit" value="Submit">
             </form>
-          </form>
         </div>
 
 
