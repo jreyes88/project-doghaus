@@ -41,7 +41,6 @@
   General Custom Styles
   =====================================
 */
-
 body {
 	font-family: 'Raleway', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
@@ -67,6 +66,7 @@ body {
 .col-md-3 {
 	margin-left: 20px;
 }
+
 /*
   =====================================
   Footer
@@ -161,7 +161,6 @@ body {
   Location Page
   =====================================
 */
-
 #navigationPage {
 	padding: 0;
 	margin: 0;
@@ -174,7 +173,7 @@ body {
 	display: inline-block;
 	float: right;
 	padding: 0;
-	padding-right:20px;
+	padding-right: 0px;
 	margin-top: 30px;
 	margin-right: 3%;
 	margin-left: 2%;
@@ -186,6 +185,7 @@ p {
 
 .panel-heading {
 	padding: 5px 10px 5px 10px;
+	width: 100%;
 	margin: 0;
 }
 
@@ -234,11 +234,10 @@ p {
 }
 
 /*
-	===========================
+	=====================================
 	Amenities Gallery CSS
-	===========================
+	=====================================
 */
-
 .photoGallery{
 	width:100%;
 	margin-left: 0px;
@@ -262,11 +261,10 @@ p {
 }
 
 /*
-	=======================
+	=====================================
 	Burger Menu CSS
-	=======================
+	=====================================
 */
-
 .burgerMenu{
 	background-color: #ddd;
 	float:right;
@@ -287,9 +285,11 @@ p {
 .burgerMenu li {
 	color:black;
 }
+
 /* 
-	======================
+	=====================================
 	Reservation Style
+	=====================================
 */
 #onHold {
 	/*background-color: #666;*/
@@ -299,32 +299,28 @@ p {
 	/*float: right;*/
 }
 
-
-.dateSub{
+.dateSub {
 	margin-bottom: 250px
 }
 
-.reservationBox
-    {
+.reservationBox {
     display: block;
     /*background-color: rgb(200, 200, 200);*/
     width: 200px;
     float: left;
     padding: 10px;
     border-bottom: 300px, solid, #fff;
-    }
+}
 
-.title
-    {
+.title {
     font-weight: bold;
-    }
+}
 
 /*
-	======================
+	=====================================
 	Media Queries
-	======================
+	=====================================
 */
-
 /* using footer temporarily to let you know which media width is taking effect */
 @media(max-width:992px){
 	#footer{
@@ -372,7 +368,6 @@ p {
 	#map{
 		width:46%;
 	}
-
 } /* end 769px-992px */
 
 @media(max-width: 768px){
@@ -479,9 +474,4 @@ p {
 		padding: 0;
 		width: 128px;
 	}
-
 } /* End < 480px */
-
-
-
-
