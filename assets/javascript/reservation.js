@@ -10,7 +10,7 @@ $('button').click(function() {
     var start = $('#arr_date').datepicker('getDate');
     var end = $('#dep_date').datepicker('getDate');
     var days = (end - start)/1000/60/60/24;
-    $('#res').text("your stay will be $" + (days) * (room.elements["room"].value));
+    $('#res').text("Your stay will be $" + (days) * (room.elements["room"].value) + "." + "Please fill out the form below to confirm your dates!");
     // console.log(room.elements["room"].value)
 
 	// var trainName =  $('#res').text((days));
