@@ -67,7 +67,6 @@ body {
 .col-md-3 {
 	margin-left: 20px;
 }
-socialMediaImages
 /*
   =====================================
   Footer
@@ -355,6 +354,7 @@ p {
 		margin: 0 auto;
 	}
 	#socialMediaIcons {
+		float: none;
 		margin: 0 auto;
 		padding: 0;
 		width: 128px;
@@ -403,6 +403,7 @@ p {
 		margin: 0 auto;
 	}
 	#socialMediaIcons {
+		float: none;
 		margin: 0 auto;
 		padding: 0;
 		width: 128px;
