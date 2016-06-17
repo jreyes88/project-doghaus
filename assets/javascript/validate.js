@@ -45,6 +45,10 @@ $('document').ready(function(){
 				timeoutID = window.setTimeout(hideDiv, 3000);
 				function hideDiv(){
 					$(".popupDivSuccess").hide(600);
+					$(".threeNum").val("");
+					$(".fourNum").val("");
+					$("#emailCapture").val("");
+					$(".guestName").val("");
 				};
 			});
 		}
