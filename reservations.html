@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
     <!-- Link to Animsition CSS -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
 
     <!-- Link to our JS -->
     <script src="assets/javascript/main.js"></script>
@@ -38,57 +38,80 @@
 </head>
 
 <body>
-<div class="animsition"> <!-- Begin animsition -->
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="container-fluid">
+    <div class="animsition"> <!-- Begin animsition -->
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="container-fluid">
 
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed hamburger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed hamburger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt ="Dog Haus Logo" id="logo"></a>
-                </div>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/images/logo.png" alt ="Dog Haus Logo" id="logo">
+                        </a>
+                    </div>
 
-                 <!-- Hamburger Menu Div -->
-                <div class="burgerMenu">
-                  <ul>
-                    <a href="index.html"><li class="text-center">Home</li></a>
-                    <a href="location.html"><li class="text-center">Location</li></a>
-                    <a href="amenities.html"><li class="text-center">Amenities</li></a>
-                  </ul>
-                </div> 
+                    <!-- Hamburger Menu Div -->
+                    <div class="burgerMenu">
+                        <ul>
+                            <a href="index.html">
+                                <li class="text-center">Home</li>
+                            </a>
+                            <a href="location.html">
+                                <li class="text-center">Location</li>
+                            </a>
+                            <a href="amenities.html">
+                                <li class="text-center">Amenities</li>
+                            </a>
+                        </ul>
+                    </div> 
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="navButton"><a href="index.html" class="animsition-link">Home</a></li>
-                        <li class="navButton" id="activeButton"><a href="reservations.html" class="animsition-link">Reservations</a></li>
-                        <li class="navButton" ><a href="location.html" class="animsition-link">Location</a></li>
-                        <li class="navButton" ><a href="amenities.html" class="animsition-link">Amenities</a></li>
-                    </ul>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="navButton">
+                                <a href="index.html" class="animsition-link">Home</a>
+                            </li>
+                            <li class="navButton" id="activeButton">
+                                <a href="reservations.html" class="animsition-link">Reservations</a>
+                            </li>
+                            <li class="navButton" >
+                                <a href="location.html" class="animsition-link">Location</a>
+                            </li>
+                            <li class="navButton" >
+                                <a href="amenities.html" class="animsition-link">Amenities</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Main Page Content -->
-    <div class= "container" id="bigContainer">
-        <!-- Header -->
-        <header>
-            <h2 class="text-center">Reserve your sweet suite home today!</h2>
-        </header>
+        <!-- Main Page Content -->
+        <div class= "container" id="bigContainer">
+            <!-- Header -->
+            <header>
+                <h2 class="text-center">Reserve your sweet suite home today!</h2>
+            </header>
 
-    <div class="dateSub">
-        <div class="reservationBox">
-             <div class="title">Click your Check in</div>
-             <input type="text" id="arr_date">
-        </div>
+            <div class="dateSub">
+                <div class="reservationBox">
+                    <div class="title">Click your Check in</div>
+                    <input type="text" id="arr_date">
+                </div>
+
+                <div class="reservationBox">
+                    <div class="title">Click your Check Out</div>
+                    <input type="text" id="dep_date">
+                </div>
+            </div>
+            <!--End of the select dates-->
 
         <div class="reservationBox">
              <div class="title">Click your Check Out</div>
@@ -131,34 +154,34 @@
             </form>
         </div>
 
-
-    <!-- Footer -->
-    <div class="container">
-        <div id="footer">
+            <!-- Footer -->
             <div class="container">
-                <div class="weatherDiv"></div>
-                <div class="copyrightDiv">
-                    <p class="text-muted" id="footer-text">&copy 2016 Dog Haus Industries</p>
-                </div>
-                <div class="socialMediaDiv">
-                    <a href="https://twitter.com/zilkerbark">
+                <div id="footer">
+                    <div class="container">
+                    <div class="weatherDiv"></div>
+                    <div class="copyrightDiv">
+                        <p class="text-muted" id="footer-text">&copy 2016 Dog Haus Industries</p>
+                    </div>
+                    <div class="socialMediaDiv">
+                        <a href="https://twitter.com/zilkerbark">
                         <img src="assets/images/twitter_icon.png" alt="Twitter Icon" class="socialMediaImages">
-                    </a>
-                    <a href="https://www.instagram.com/zilkerbark/">
+                        </a>
+                        <a href="https://www.instagram.com/zilkerbark/">
                         <img src="assets/images/insta_icon.png" alt="Instagram Icon" class="socialMediaImages">
-                    </a>
-                    <a href="https://www.facebook.com/zilkerbark/">
+                        </a>
+                        <a href="https://www.facebook.com/zilkerbark/">
                         <img src="assets/images/facebook_icon.png" alt="Facebook Icon" class="socialMediaImages">
-                    </a>
+                        </a>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div><!-- End animsition -->
+    </div><!-- End animsition -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
-<script src="assets/javascript/jquery-ui.js"></script>
-<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
-<script src="assets/javascript/reservation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+    <script src="assets/javascript/jquery-ui.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+    <script src="assets/javascript/reservation.js"></script>
 </body>
 </html>
