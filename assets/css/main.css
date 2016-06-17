@@ -291,25 +291,54 @@ p {
 	Reservation Style
 	=====================================
 */
-#onHold {
-	/*background-color: #666;*/
-	width: 400px;
+#overallReservation{
+	width: 100%;
 	height: 275px;
-	border-left: 100px;
-	/*float: right;*/
 }
 
 .dateSub {
-	margin-bottom: 250px
+	width: 50%;
+	height: 275px;
+	padding: 0 15px 250px 0;
+	margin: 0;
+	float: left;
+}
+
+.ui-datepicker-calendar {
+	padding: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000;
+	background-color: #fff;
+	border-radius: 5px;
+}
+.ui-datepicker-title {
+	background-color: #fff;
+}
+
+.ui-datepicker-header {
+	background-color: #fff;
 }
 
 .reservationBox {
-    display: block;
-    /*background-color: rgb(200, 200, 200);*/
+    display: inline-block;
     width: 200px;
-    float: left;
     padding: 10px;
     border-bottom: 300px, solid, #fff;
+}
+
+#roomSelector {
+	height: 275px;
+	width: 25%;
+	margin: 0;
+	float: left;
+}
+
+#onHold {
+	width: 25%;
+	height: 275px;
+	margin: 0;
+	float: left;
 }
 
 .title {
