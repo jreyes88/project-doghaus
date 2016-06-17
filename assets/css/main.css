@@ -319,6 +319,16 @@ p {
     font-weight: bold;
     }
 
+.phoneNumInputs{
+	display:inline;
+}
+.threeNum{
+	max-width: 35px;
+}
+.fourNum{
+	max-width:50px;
+}
+
 /*
 	======================
 	Media Queries
