@@ -1,5 +1,6 @@
 $("document").ready(function(){
 
+	$(".commentMSG").hide();
 	// Firebase for Comment Submission
 	var commentData = new Firebase("https://project-doghaus.firebaseio.com/");
 
@@ -16,7 +17,6 @@ $("document").ready(function(){
 			comment: commentComment
 		});
 
-		$(".commentMSG").hide();
 		$(".commentMSG").html("Thank you! Your comment has been sent!");
 		$(".commentMSG").show(600, function(){
 				timeoutID = window.setTimeout(hideDiv, 2500);

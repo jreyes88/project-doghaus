@@ -1,5 +1,5 @@
 //reservation.js
-
+$('#res').hide();
 var resData = new Firebase("https://reservationlog.firebaseio.com/");
 
 $(function() {
@@ -29,7 +29,7 @@ $('button').click(function() {
 
 resData.push(newRes);
 
-$('#res').hide();
+
 $('#res').text("Your stay will be $" + (days) * (room.elements["room"].value) + "." + "Please fill out the form below to confirm your dates!");
 $("#res").show(1000, function(){
 				timeoutID = window.setTimeout(hideDiv, 4000);
