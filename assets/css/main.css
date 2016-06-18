@@ -351,18 +351,23 @@ p {
 .fourNum{
 	max-width:50px;
 }
+.sendThisAlready{
+	margin-top:6px;
+}
+/*
+	=========================
+	MODALS
+	=========================
+*/
 .popupDivError{
 	background-color: rgba(255, 255, 255, .0);
 	color:red;
 }
-.popupDivSuccess{
+.popupDivSuccess, .commentMSG, #res{
 	background-color: rgba(50, 200, 50, .7);
 	color:white;
 	border-radius: 10px;
 	padding:6px;
-}
-.sendThisAlready{
-	margin-top:6px;
 }
 
 /*
