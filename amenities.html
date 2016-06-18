@@ -29,10 +29,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
     <!-- Link to Animsition CSS -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
 
-   <!-- Link to Lightbox CSS -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <!-- Link to Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
 
     <!-- Link to CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
@@ -40,136 +40,151 @@
 </head>
 
 <body>
-<div class="animsition"> <!-- Begin animsition -->
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="container-fluid">
+    <div class="animsition"> <!-- Begin animsition -->
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="container-fluid">
 
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
+                    <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed hamburger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt ="Dog Haus Logo" id="logo"></a>
+                    </div>
+
+                    <!-- Hamburger Menu Div -->
+                    <div class="burgerMenu">
+                        <ul>
+                            <a href="index.html">
+                                <li class="text-center">Home</li>
+                            </a>
+                            <a href="reservations.html">
+                                <li class="text-center">Reservations</li>
+                            </a>
+                            <a href="location.html">
+                                <li class="text-center">Location</li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="navButton">
+                                <a href="index.html" class="animsition-link">Home</a>
+                            </li>
+                            <li class="navButton" >
+                                <a href="reservations.html" class="animsition-link">Reservations</a>
+                            </li>
+                            <li class="navButton">
+                                <a href="location.html" class="animsition-link">Location</a>
+                            </li>
+                            <li class="navButton" id="activeButton">
+                                <a href="amenities.html" class="animsition-link">Amenities</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
+        </nav>
 
-                 <!-- Hamburger Menu Div -->
-                <div class="burgerMenu">
-                  <ul>
-                    <a href="index.html"><li class="text-center">Home</li></a>
-                    <a href="reservations.html"><li class="text-center">Reservations</li></a>
-                    <a href="location.html"><li class="text-center">Location</li></a>
-                  </ul>
-                </div> 
+        <!-- Main Page Content -->
+        <div class= "container" id="bigContainer">
+            <!-- Header -->
+            <header>
+                <h2 class="text-center">The full Dog Haüs experience</h2>
+                <h2 class="text-center">We'll take care of you and your pooch!</h2>
+            </header>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="navButton"><a href="index.html" class="animsition-link">Home</a></li>
-                        <li class="navButton" ><a href="reservations.html" class="animsition-link">Reservations</a></li>
-                        <li class="navButton"><a href="location.html" class="animsition-link">Location</a></li>
-                        <li class="navButton" id="activeButton"><a href="amenities.html" class="animsition-link">Amenities</a></li>
-                    </ul>
+            <div class="row container photoGallery">
+                <div class="col-md-2 placeColumn"></div>
+                <div class="col-md-2 imageCol">
+                    <a href="assets/images/amen1.jpg" data-lightbox="amenities" data-title="Caption1"><img class="topGalleryImg" src="assets/images/amen1.jpg"></a>
                 </div>
+                <div class="col-md-2 imageCol">
+                    <a href="assets/images/amen2.jpg" data-lightbox="amenities" data-title="Caption2"><img class="topGalleryImg" src="assets/images/amen2.jpg"></a>
+                </div>
+                <div class="col-md-2 imageCol">
+                    <a href="assets/images/amen3.jpg" data-lightbox="amenities" data-title="Caption3"><img class="topGalleryImg" src="assets/images/amen3.jpg"></a>
+                </div>
+                <div class="col-md-2 imageCol">
+                    <a href="assets/images/amen4.jpg" data-lightbox="amenities" data-title="Caption4"><img class="topGalleryImg" src="assets/images/amen4.jpg"></a>
+                </div>
+                <div class="col-md-2 placeColumn"></div>
             </div>
-        </div>
-    </nav>
 
-    <!-- Main Page Content -->
-    <div class= "container" id="bigContainer">
-        <!-- Header -->
-        <header>
-            <h2 class="text-center">The full Dog Haüs experience</h2>
-            <h2 class="text-center">We'll take care of you and your pooch!</h2>
-        </header>
-
-        <div class="row container photoGallery">
-            <div class="col-md-2 placeColumn"></div>
-            <div class="col-md-2 imageCol">
-                <a href="assets/images/amen1.jpg" data-lightbox="amenities" data-title="Caption1"><img class="topGalleryImg" src="assets/images/amen1.jpg"></a>
-            </div>
-            <div class="col-md-2 imageCol">
-                <a href="assets/images/amen2.jpg" data-lightbox="amenities" data-title="Caption2"><img class="topGalleryImg" src="assets/images/amen2.jpg"></a>
-            </div>
-            <div class="col-md-2 imageCol">
-                <a href="assets/images/amen3.jpg" data-lightbox="amenities" data-title="Caption3"><img class="topGalleryImg" src="assets/images/amen3.jpg"></a>
-            </div>
-            <div class="col-md-2 imageCol">
-                <a href="assets/images/amen4.jpg" data-lightbox="amenities" data-title="Caption4"><img class="topGalleryImg" src="assets/images/amen4.jpg"></a>
-            </div>
-            <div class="col-md-2 placeColumn"></div>
-        </div>
-
-        <div class="container">
+            <div class="container">
                 <!-- Description of Amenities -->
                 <div id="amenitiesLists">
                     <p class="text-center">Established in 2016, the Dog Haüs is proud to feature various amenities to provide both you and your beloved canine companion with the most pet-friendly accomodation to be experienced in Austin.</p>
 
                     <p class="text-center"><strong>COMING MARCH 2017: </strong>The Dog Haüs plans to feature the first-ever canine exclusive water park! The perfect way to enjoy Austin's legendary summer weather.</p>
                 </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="text-center"><h3>The Dog Haüs offers the following amenities:</h3>
-                        <ul>
-                            <li>Locally roasted coffee, and organic dog treats</li>
-                            <li>Complimentary Wi-Fi</li>
-                            <li>Free parking for the duration of your stay</li>
-                            <li>A 40 Acre dog park across the street</li>
-                            <li>Hourly shuttles from 7:00am until 10:00pm between Town Lake and Dog Haüs</li>
-                            <li>Daily room and laundry service</li>
-                            <li>And of course, our highly-trained, friendly, and knowledgable staff</li>
-                        </ul>
-                    </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="text-center"><h3>The Dog Haüs offers the following amenities:</h3>
+                            <ul>
+                                <li>Locally roasted coffee, and organic dog treats</li>
+                                <li>Complimentary Wi-Fi</li>
+                                <li>Free parking for the duration of your stay</li>
+                                <li>A 40 Acre dog park across the street</li>
+                                <li>Hourly shuttles from 7:00am until 10:00pm between Town Lake and Dog Haüs</li>
+                                <li>Daily room and laundry service</li>
+                                <li>And of course, our highly-trained, friendly, and knowledgable staff</li>
+                            </ul>
+                        </p>
+                        <img src="assets/images/dog_icon.png" alt="Dog Icon" class="paragraphDogIcon">
+                        <p class="text-center"><h3>Additionally, every one of our suites features the following:</h3>
+                            <ul>
+                                <li>King-sized luxury mattresses</li>
+                                <li>Memory foam dog beds and cushions</li>
+                                <li>Complimentary mini-bar, it's on the Haüs</li>
+                                <li>48 inch flat-screen TV with 300+ channels</li>
+                                <li>A safebox for your valuables</li>
+                                <li>Plush locally-sourced furniture</li>
+                                <li>Canine-friendly soaps and shampoos</li>
+                            </ul>
+                        </p>
+                        <img src="assets/images/dog_icon_left.png" alt="Dog Icon" class="paragraphDogIcon">
+                        <p class="text-center"><h3>Our Deluxe suites offer all of the above, as well as the following:</h3>
+                            <ul>
+                                <li>The best views the Dog Haüs has to offer</li>
+                                <li>State-of-the-Art massage chairs for both yourself and your dog</li>
+                                <li>A King-sized Jacuzzi</li>
+                                <li>Hammocks on the patio</li>
+                                <li>Additionally, all Deluxe Suite bookings come with a complimentary gift card to our Spa</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <!-- Metup API -->
+
+                    <div class="container col-md-6">
+                        <h3>Checkout these cool dog events in the area!</h3>
+                        <table class="table" id="meetupTable">
+                            <thead>
+                                <tr>
+                                    <th>Group Name</th>
+                                    <th>Event</th>
+                                    <th>Event Page</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="eventResults">
+                                    <td id="1"> </td>
+                                    <td id="2"> </td>
+                                    <td id="3"> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <img src="assets/images/dog_icon.png" alt="Dog Icon" class="paragraphDogIcon">
-                    <p class="text-center"><h3>Additionally, every one of our suites features the following:</h3>
-                        <ul>
-                            <li>King-sized luxury mattresses</li>
-                            <li>Memory foam dog beds and cushions</li>
-                            <li>Complimentary mini-bar, it's on the Haüs</li>
-                            <li>48 inch flat-screen TV with 300+ channels</li>
-                            <li>A safebox for your valuables</li>
-                            <li>Plush locally-sourced furniture</li>
-                            <li>Canine-friendly soaps and shampoos</li>
-                        </ul>
-                    </p>
-                    <img src="assets/images/dog_icon_left.png" alt="Dog Icon" class="paragraphDogIcon">
-                    <p class="text-center"><h3>Our Deluxe suites offer all of the above, as well as the following:</h3>
-                        <ul>
-                            <li>The best views the Dog Haüs has to offer</li>
-                            <li>State-of-the-Art massage chairs for both yourself and your dog</li>
-                            <li>A King-sized Jacuzzi</li>
-                            <li>Hammocks on the patio</li>
-                            <li>Additionally, all Deluxe Suite bookings come with a complimentary gift card to our Spa</li>
-                        </ul>
-                    </p>
                 </div>
-
-                <!-- Metup API -->
-
-                <div class="container col-md-6">
-                    <h3>Checkout these cool dog events in the area!</h3>
-                    <table class="table" id="meetupTable">
-                        <thead>
-                            <tr>
-                                <th>Group Name</th>
-                                <th>Event</th>
-                                <th>Event Page</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr id="eventResults">
-                                <td id="1"> </td>
-                                <td id="2"> </td>
-                                <td id="3"> </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <img src="assets/images/dog_icon.png" alt="Dog Icon" class="paragraphDogIcon">
             </div>
         </div>
 
@@ -201,6 +216,5 @@
 
     <!-- Link to Lightbox JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
-
 </body>
 </html>
