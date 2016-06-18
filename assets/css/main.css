@@ -291,10 +291,12 @@ p {
 	margin-bottom:10px;
 }
 
-.burgerMenu li {
+.burgerMenu li a {
 	color:black;
 	font-size: 1.4em;
+	text-decoration: none;
 }
+
 
 /* 
 	=====================================
