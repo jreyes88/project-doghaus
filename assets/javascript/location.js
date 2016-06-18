@@ -1,7 +1,7 @@
 $("document").ready(function(){
 
-	$(".commentMSG").hide();
-	// Firebase for Comment Submission
+	$(".commentMSG").hide(); //hide notification div on initial load
+	// Firebase as variable for Comment Submission
 	var commentData = new Firebase("https://project-doghaus.firebaseio.com/");
 
 	$("#submitButton").on("click", function() {
@@ -10,14 +10,15 @@ $("document").ready(function(){
 		var commentName = $('#inputName').val().trim();
 		var commentComment = $('#inputMessage').val().trim();
 
-		// Log the Bidder and Price (Even if not the highest)
-
+		// set comment and commenter
 		commentData.set({
 			commenter: commentName,
 			comment: commentComment
 		});
 
+		//in same on click function after user data set in firebase, notify user
 		$(".commentMSG").html("Thank you! Your comment has been sent!");
+		//fade in 0.6 seconds, display message for 2.5 seconds, fade out 0.6 seconds
 		$(".commentMSG").show(600, function(){
 				timeoutID = window.setTimeout(hideDiv, 2500);
 				function hideDiv(){
@@ -25,7 +26,7 @@ $("document").ready(function(){
 				};
 			});
 
-		// Return False to allow "enter"
+		// Return False to allow "enter", prevent reload of page
 		return false;
 	});
 
