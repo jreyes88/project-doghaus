@@ -351,6 +351,16 @@ p {
 .fourNum{
 	max-width:50px;
 }
+.popupDivError{
+	background-color: rgba(255, 255, 255, .0);
+	color:red;
+}
+.popupDivSuccess{
+	background-color: rgba(50, 200, 50, .7);
+	color:white;
+	border-radius: 10px;
+	padding:6px;
+}
 
 /*
 	=====================================
