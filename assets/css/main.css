@@ -264,6 +264,11 @@ p {
 	padding-left: 15px;
 }
 
+.amenitiesRow {
+	margin-left: 0px;
+	margin-top: 0px;
+}
+
 /*
 	=====================================
 	Burger Menu CSS
