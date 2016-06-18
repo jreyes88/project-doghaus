@@ -114,6 +114,7 @@ body {
 	padding: 0;
 	width: 128px;
 }
+
 .socialMediaDiv {
 	float: right;
 	width: 25%;
@@ -241,25 +242,25 @@ p {
 	Amenities Gallery CSS
 	=====================================
 */
-.photoGallery{
+.photoGallery {
 	width:100%;
 	margin-left: 0px;
 	margin-right: 0px;
 	padding-bottom: 15px;
 }
 
-.topGalleryImg{
+.topGalleryImg {
 	display: inline;
 	height: 100%;
 	width: 100%;
 }
 
-.photoGallery div{
+.photoGallery div {
 	overflow: none;
 }
 
 /* Amenities h3 indent */
-#amenitiesLists h3{
+#amenitiesLists h3 {
 	padding-left: 15px;
 }
 
@@ -268,7 +269,7 @@ p {
 	Burger Menu CSS
 	=====================================
 */
-.burgerMenu{
+.burgerMenu {
 	background-color: #ddd;
 	float:right;
 	border-radius:4px;
@@ -277,7 +278,7 @@ p {
 	right:0;
 }
 
-.burgerMenu ul{
+.burgerMenu ul {
 	list-style-type: none;
 	padding-left:10px;
 	padding-right:10px;
@@ -295,7 +296,7 @@ p {
 	Reservation Styles
 	=====================================
 */
-#overallReservation{
+#overallReservation {
 	width: 100%;
 	height: 275px;
 }
@@ -349,20 +350,24 @@ p {
     font-weight: bold;
 }
 
-.phoneNumInputs{
+.phoneNumInputs {
 	display:inline;
 }
-.threeNum{
+
+.threeNum {
 	max-width: 35px;
 }
-.fourNum{
+
+.fourNum {
 	max-width:50px;
 }
+
 .sendThisAlready {
 	margin-top:6px;
 	color: #777;
 	background-color: #e7e7e7
 }
+
 .sendThisAlready:hover {
 	margin-top:6px;
 	background-color: #00ace8;
@@ -372,21 +377,22 @@ p {
 	color: #777;
 	background-color: #e7e7e7
 }
+
 .roomSelector:hover {
 	background-color: #00ace8;
 	color: #333;
 }
 
 /*
-	=========================
-	MODALS
-	=========================
+	=====================================
+	Modals
+	=====================================
 */
-.popupDivError{
+.popupDivError {
 	background-color: rgba(255, 255, 255, .0);
 	color:red;
 }
-.popupDivSuccess, .commentMSG, #res{
+.popupDivSuccess, .commentMSG, #res {
 	background-color: rgba(50, 200, 50, .7);
 	color:white;
 	border-radius: 10px;
@@ -398,83 +404,99 @@ p {
 	Media Queries
 	=====================================
 */
-@media(max-width:992px){
+@media(max-width:992px) {
 	.weatherDiv {
 		width: 100%;
 		display: inline-block;
 		text-align: center;
 	}
+
 	.copyrightDiv {
 		width: 100%;
 		display: inline-block;
 		text-align: center;
 	}
+
 	.socialMediaDiv {
 		width: 100%;
 		display: inline-block;
 		margin: 0 auto;
 	}
+
 	#footer-text {
 		float: none;
 	}
+
 	.socialMediaImages {
 		float: none;
 		display: inline-block;
 		margin: 0 auto;
 	}
+
 	#socialMediaIcons {
 		float: none;
 		margin: 0 auto;
 		padding: 0;
 		width: 128px;
 	}
+
 	.topGalleryImg{
 		max-width: 326px;
 	}
+
 	.imageCol{
 		display: inline-block;
 		padding-bottom: 15px;
 	}
+
 	.placeColumn{
 		display: none;
 	}
+
 	#map{
 		max-width: 400px;
 		width: 50%;
 		height: 60%;
 		margin-left: 3%;
 	}
+
 	.locationInfo{
 		width: 35%;
 		height: 70%;
 		margin-right: 3%;
 	}
+
 } /* end 769px-992px */
 
-@media(max-width: 768px){
+@media(max-width: 768px) {
 	.weatherDiv {
 		width: 100%;
 		display: inline-block;
 		text-align: center;
 	}
+
 	.copyrightDiv {
 		width: 100%;
 		display: inline-block;
 		text-align: center;
 	}
+
 	.socialMediaDiv {
 		width: 100%;
 		display: inline-block;
 		margin: 0 auto;
 	}
+
 	#footer-text {
 		float: none;
 	}
+
 	.socialMediaImages {
 		float: none;
 		display: inline-block;
 		margin: 0 auto;
 	}
+
 	#socialMediaIcons {
 		float: none;
 		margin: 0 auto;
@@ -482,25 +504,25 @@ p {
 		width: 128px;
 	}
 
-	.photoGallery{
+	.photoGallery {
 		display:block;
 	}
 
-	.topGalleryImg{
+	.topGalleryImg {
 		max-width: 999px;
 	}
 
-	.imageCol{
+	.imageCol {
 		margin: 0 10%;
 		width:80%;
 		padding-bottom: 15px;
 	}
 
-	.placeColumn{
+	.placeColumn {
 		display: none;
 	}
 
-	.locContentDiv{
+	.locContentDiv {
 		width:100%;
 		display:block;
 	}
@@ -511,13 +533,15 @@ p {
 		margin: 20px;
 		padding: 0;
 	}
+
 	.locationInfo {
 		float: none;
 		width: 90%;
 		margin: 350px 20px 20px 20px;
 		display: block;
 	}
-	#overallReservation{
+
+	#overallReservation {
 		width: 100%;
 		height: 100%;
 	}
@@ -558,30 +582,35 @@ p {
 
 } /* End 481-768px */
 
-@media(max-width: 480px){
+@media(max-width: 480px) {
 	.weatherDiv {
 		width: 100%;
 		display: inline-block;
 		text-align: center;
 	}
+
 	.copyrightDiv {
 		width: 100%;
 		display: inline-block;
 		text-align: center;
 	}
+
 	.socialMediaDiv {
 		width: 100%;
 		display: inline-block;
 		margin: 0 auto;
 	}
+
 	#footer-text {
 		float: none;
 	}
+
 	.socialMediaImages {
 		float: none;
 		display: inline-block;
 		margin: 0 auto;
 	}
+
 	#socialMediaIcons {
 		margin: 0 auto;
 		padding: 0;
@@ -594,13 +623,15 @@ p {
 		margin: 20px;
 		padding: 0;
 	}
+
 	.locationInfo {
 		float: none;
 		width: 85%;
 		margin: 350px 20px 20px 20px;
 		display: block;
 	}
-	#overallReservation{
+
+	#overallReservation {
 		width: 100%;
 		height: 100%;
 	}
@@ -639,4 +670,5 @@ p {
 		float: none;
 		display: block;
 	}
+	
 } /* End < 480px */

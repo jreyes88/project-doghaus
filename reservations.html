@@ -49,37 +49,53 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt ="Dog Haus Logo" id="logo"></a>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png" alt ="Dog Haus Logo" id="logo">
+                    </a>
                 </div>
 
                  <!-- Hamburger Menu Div -->
                 <div class="burgerMenu">
-                  <ul>
-                    <a href="index.html"><li class="text-center">Home</li></a>
-                    <a href="location.html"><li class="text-center">Location</li></a>
-                    <a href="amenities.html"><li class="text-center">Amenities</li></a>
-                  </ul>
+                    <ul>
+                        <a href="index.html">
+                            <li class="text-center">Home</li>
+                        </a>
+                        <a href="location.html">
+                            <li class="text-center">Location</li>
+                        </a>
+                        <a href="amenities.html">
+                            <li class="text-center">Amenities</li>
+                        </a>
+                    </ul>
                 </div> 
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="navButton"><a href="index.html" class="animsition-link">Home</a></li>
-                        <li class="navButton" id="activeButton"><a href="reservations.html" class="animsition-link">Reservations</a></li>
-                        <li class="navButton" ><a href="location.html" class="animsition-link">Location</a></li>
-                        <li class="navButton" ><a href="amenities.html" class="animsition-link">Amenities</a></li>
+                        <li class="navButton">
+                            <a href="index.html" class="animsition-link">Home</a>
+                        </li>
+                        <li class="navButton" id="activeButton">
+                            <a href="reservations.html" class="animsition-link">Reservations</a>
+                        </li>
+                        <li class="navButton" >
+                            <a href="location.html" class="animsition-link">Location</a>
+                        </li>
+                        <li class="navButton" >
+                            <a href="amenities.html" class="animsition-link">Amenities</a>
+                        </li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </nav>
 
     <!-- Main Page Content -->
     <div class= "container" id="bigContainer">
+
         <!-- Header -->
         <header>
-            <h2 class="text-center">Reserve your sweet suite home today!</h2>
+            <h3 class="text-center">Reserve your sweet suite home today!</h3>
         </header>
 
         <div id="overallReservation"> <!-- Main container for check in/out -->
@@ -111,29 +127,29 @@
                 
                 <!-- Reservation/Input Auth page -->
                 <div id="onHold">
-                   <h4>Reserve your room</h4>
-                   <form id ="resInfoForm">
-                    First name:<br>
-                   <input class="guestName guestName1" type="text" name="firstname">
-                          <br>
-                          Last name:<br>
-                          <input class="guestName guestName2" type="text" name="lastname"><br>
-                          Email:<br>
-                          <div class="popupDiv popupDivEmail popupDivError"></div>
-                       <input id="emailCapture" type="text" name="email"><br>
+                    <h4>Reserve your room</h4>
+                    <form id ="resInfoForm">
+                        First name:<br>
+                        <input class="guestName guestName1" type="text" name="firstname">
+                        <br>
+                        Last name:<br>
+                        <input class="guestName guestName2" type="text" name="lastname"><br>
+                        Email:<br>
+                        <div class="popupDiv popupDivEmail popupDivError"></div>
+                        <input id="emailCapture" type="text" name="email">
+                        <br>
                         Phone Number:<br>
                         <div class="popupDiv popupDivPhone popupDivError"></div>
-                          <div class="phoneNumInputs">
+                        <div class="phoneNumInputs">
                             <input id="num1" type="text" name="phoneNumber" maxlength="3" class="threeNum text-center"><p class="doNotSpace"> - </p>
                             <input id="num2" type="text" name="phoneNumber" maxlength="3" class="threeNum text-center"><p class="doNotSpace"> - </p>
                             <input id="num3" type="text" name="phoneNumber" maxlength="4" class="fourNum text-center">
-                          </div>
-                          <br>
-                       <input class="sendThisAlready btn navButton" type="submit" value="Submit">
-                       <div class="popupDiv popupDivSuccess"></div>
+                        </div>
+                        <br>
+                        <input class="sendThisAlready btn navButton" type="submit" value="Submit">
+                        <div class="popupDiv popupDivSuccess"></div>
                     </form>
                 </div>
-
             </div>
         </div>
 
@@ -162,7 +178,7 @@
         </div>
     </div>
 </div><!-- End animsition -->
-    <!-- Some tags required/designed to be placed at bottom of body element -->
+<!-- Some tags required/designed to be placed at bottom of body element -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
 <script src="assets/javascript/jquery-ui.js"></script>
 <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
