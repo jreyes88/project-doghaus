@@ -12,9 +12,18 @@ $("document").ready(function(){
 		// Log the Bidder and Price (Even if not the highest)
 
 		commentData.set({
-			highBidder: commentName,
-			highPrice: commentComment
+			commenter: commentName,
+			comment: commentComment
 		});
+
+		$(".commentMSG").hide();
+		$(".commentMSG").html("Thank you! Your comment has been sent!");
+		$(".commentMSG").show(600, function(){
+				timeoutID = window.setTimeout(hideDiv, 2500);
+				function hideDiv(){
+					$(".commentMSG").hide(600);
+				};
+			});
 
 		// Return False to allow "enter"
 		return false;
