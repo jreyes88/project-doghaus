@@ -25,7 +25,6 @@ $('button').click(function() {
 		res: resInput
 		 
 	}
-	console.log(newRes);
 	// Uploads res data to the database
 
 resData.push(newRes);
@@ -36,8 +35,6 @@ resData.push(newRes);
 });
 
 resData.on("child_added", function(childSnapshot, prevChildKey){
-
-	console.log(childSnapshot.val());
 
 	// Store everything into a variable.
 	var startInput = childSnapshot.val().start;

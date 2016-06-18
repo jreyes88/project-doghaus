@@ -10,8 +10,6 @@ $("document").ready(function(){
 		var commentComment = $('#inputMessage').val().trim();
 
 		// Log the Bidder and Price (Even if not the highest)
-		console.log(commentName);
-		console.log(commentComment);
 
 		commentData.set({
 			highBidder: commentName,

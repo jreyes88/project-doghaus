@@ -12,17 +12,11 @@ $("document").ready(function(){
 		})
 		.done(function(response) {
 			var eventResults = response.results;
-			console.log(eventResults);
-
 
 			for (var i = 0; i < eventResults.length; i++) {
 				var groupName = eventResults[i].group.name;
 				var groupURL = eventResults[i].event_url;
 				var eventName = eventResults[i].name;
-				console.log(groupName);
-				console.log(eventName);
-				console.log(groupURL);
-
 
 				$("#meetupTable > tbody").append(
 					"<tr><td>" + groupName + "</td><td>" + eventName + "</td><td>" + "<a href='" + groupURL + "'>Link" + "</a>" + "</td></tr"
