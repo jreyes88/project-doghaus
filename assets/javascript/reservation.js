@@ -10,7 +10,7 @@ $('button').click(function() {
     var start = $('#arr_date').datepicker('getDate');
     var end = $('#dep_date').datepicker('getDate');
     var days = (end - start)/1000/60/60/24;
-    $('#res').text("Your stay will be $" + (days) * (room.elements["room"].value) + "." + "Please fill out the form below to confirm your dates!");
+    //$('#res').text("Your stay will be $" + (days) * (room.elements["room"].value) + "." + "Please fill out the form below to confirm your dates!");
     // console.log(room.elements["room"].value)
 
 	var startInput = (start);
@@ -28,7 +28,15 @@ $('button').click(function() {
 	// Uploads res data to the database
 
 resData.push(newRes);
-// 	// // Logs everything to console
+
+$('#res').hide();
+$('#res').text("Your stay will be $" + (days) * (room.elements["room"].value) + "." + "Please fill out the form below to confirm your dates!");
+$("#res").show(1000, function(){
+				timeoutID = window.setTimeout(hideDiv, 4000);
+				function hideDiv(){
+					$("#res").hide(1000);
+				};
+			});
 
 
 	return false;
