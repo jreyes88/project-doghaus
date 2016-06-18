@@ -375,11 +375,7 @@ p {
 	Media Queries
 	=====================================
 */
-/* using footer temporarily to let you know which media width is taking effect */
 @media(max-width:992px){
-	#footer{
-		background-color: blue;
-	}
 	.weatherDiv {
 		width: 100%;
 		display: inline-block;
@@ -432,9 +428,6 @@ p {
 } /* end 769px-992px */
 
 @media(max-width: 768px){
-	#footer{
-		background-color: red;
-	}
 	.weatherDiv {
 		width: 100%;
 		display: inline-block;
@@ -482,8 +475,6 @@ p {
 	.placeColumn{
 		display: none;
 	}
-
-	/* having problems from here */
 
 	.locContentDiv{
 		width:100%;
@@ -544,10 +535,6 @@ p {
 } /* End 481-768px */
 
 @media(max-width: 480px){
-
-	#footer{
-		background-color: #a35;
-	}
 	.weatherDiv {
 		width: 100%;
 		display: inline-block;
