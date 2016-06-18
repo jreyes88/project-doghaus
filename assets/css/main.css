@@ -223,6 +223,7 @@ p {
   =====================================
 */
 #map {
+	max-width: 640px;
 	width: 50%;
 	height: 70%;
 	background-color: #333;
@@ -286,11 +287,12 @@ p {
 
 .burgerMenu li {
 	color:black;
+	font-size: 1.4em;
 }
 
 /* 
 	=====================================
-	Reservation Style
+	Reservation Styles
 	=====================================
 */
 #overallReservation{
@@ -437,6 +439,7 @@ p {
 		display: none;
 	}
 	#map{
+		max-width: 400px;
 		width: 50%;
 		height: 60%;
 		margin-left: 3%;

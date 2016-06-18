@@ -29,7 +29,7 @@
     <!-- Link to our JS -->
     <script src="assets/javascript/main.js"></script>
 
-    <!-- Link to CSS -->
+    <!-- Link to our Custom CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <title>Dog Haüs - Reservations</title>
 </head>
@@ -70,6 +70,7 @@
                         <li class="navButton" ><a href="amenities.html" class="animsition-link">Amenities</a></li>
                     </ul>
                 </div>
+
             </div>
         </div>
     </nav>
@@ -81,7 +82,7 @@
             <h2 class="text-center">Reserve your sweet suite home today!</h2>
         </header>
 
-        <div id="overallReservation">
+        <div id="overallReservation"> <!-- Main container for check in/out -->
             <div class="dateSub">
                 <div class="reservationBox">
                      <div class="title">Click your Check in</div>
@@ -93,8 +94,9 @@
                      <input type="text" id="dep_date">
                 </div>
              </div>
-            <!--End of the select dates-->
-            <!--This selects the room value.-->
+            <!-- End of the select dates -->
+
+            <!-- Suite Selector Div -->
             <div id="roomSelector">
                 <h4>Room Selection</h4>
                 <form id="room">
@@ -107,9 +109,7 @@
                 </div>
             </div>
                 
-            <!--This is a form for entering data to confim reservations-->
-            <!--User validation use here-->
-                
+                <!-- Reservation/Input Auth page -->
                 <div id="onHold">
                    <h4>Reserve your room</h4>
                    <form id ="resInfoForm">
@@ -133,6 +133,7 @@
                        <div class="popupDiv popupDivSuccess"></div>
                     </form>
                 </div>
+
             </div>
         </div>
 
@@ -161,7 +162,7 @@
         </div>
     </div>
 </div><!-- End animsition -->
-
+    <!-- Some tags required/designed to be placed at bottom of body element -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
 <script src="assets/javascript/jquery-ui.js"></script>
 <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>

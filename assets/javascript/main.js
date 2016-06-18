@@ -1,7 +1,8 @@
 $("document").ready(function(){
 
-	/***  GLOBAL VARIABLES  ***/
-		// Declare vars here
+	/***************
+	 WEATHER API
+	****************/
 		var weatherAPIkey = 'fc43f12d67fa7ee0b9bbb0d14b7111ed';
 		var weatherURL = "http://api.openweathermap.org/data/2.5/forecast/city?id=4671654&APPID="+weatherAPIkey;
 
@@ -11,8 +12,10 @@ $("document").ready(function(){
 			url: weatherURL,
 			method: 'GET'
 		}).done(function(response){
+			//traverse JSON to desired weather description
 			var currentWeatherCondition = response.list[0].weather[0].description;
 
+			//function to capitalize first letter of weather description
 			function titleCase(str) {  
   			str = str.toLowerCase().split(' ');
  			 for(var i = 0; i < str.length; i++){
@@ -23,37 +26,42 @@ $("document").ready(function(){
   				return str.join(' ');
 				};
 
+			//store capital-corrected description as variable
 			var curWeaConCaps = titleCase(currentWeatherCondition);
 
+			//traverse response JSON, get temperature. Default unit = kelvin
 			var kelvinTemp = response.list[0].main.temp;
-	        
+	        //convert Kelvin degrees to Farenheight degrees
 	        function convertFah() {
 	            var newTemp = kelvinTemp - 273.15;
 	            var newNewTemp = newTemp * 1.80;
 	            var finalTemp = newNewTemp + 32;
+	            //get converted value, round down
 	            var finalTempRounded = Math.floor(finalTemp);
+	            //stringify values for html appendation
 	            var finalTempString = finalTempRounded.toString();
-
+	            //post temperature to page
 	            $(".weatherDiv").html("<p class='text-muted'> Weather Conditions at Dog Haüs : " +  curWeaConCaps + ", " + finalTempString + " "+ "&#x2109" + "</p>");
 	        }
 
-	        convertFah();//call conversion function
+	        convertFah();//call conversion + rounding + posting function
 
 		});//end ajax
 
 	};//end getWeatherData
 
-	getWeatherData(); //call function
+	getWeatherData(); //call function to run all weather sub-functions
 
-	/***	ANIMSITION	***/
+	/***************
+		ANIMSITION
+	****************/
 
 	$(".animsition").animsition({
-    inClass: 'fade-in-left',
+    inClass: 'fade-in-left',   // in and out directions
     outClass: 'fade-out-left',
-    inDuration: 700,
+    inDuration: 700,	//in and out durations in miliseconds
     outDuration: 400,
     linkElement: '.animsition-link',
-    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
     loading: true,
     loadingParentElement: 'body', //animsition wrapper element
     loadingClass: 'animsition-loading',
@@ -70,7 +78,9 @@ $("document").ready(function(){
     transition: function(url){ window.location.href = url; }
   });
 
-	/***	BURGER MENU		***/
+	/************	
+	 BURGER MENU		
+	************/
 
 	$(".burgerMenu").hide();
 	$(".hamburger").on("click", function(){
