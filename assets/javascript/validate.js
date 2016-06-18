@@ -1,4 +1,6 @@
 $('document').ready(function(){
+
+	var theMasterBase = new Firebase("https://project-doghaus.firebaseio.com/");
 	//hide popups
 	$(".popupDiv").hide();
 	//name of submit button
@@ -8,6 +10,8 @@ $('document').ready(function(){
 		var num1 = $("#num1").val();
 		var num2 = $("#num2").val();
 		var num3 = $("#num3").val();
+		var firstName = $(".guestName1").val();
+		var lastName = $(".guestName2").val();
 		//var to post to html warning div
 		var responseMessage;
 		//prevent page refresh
@@ -32,6 +36,13 @@ $('document').ready(function(){
 				};
 			});
 		}else{
+			var newReservationContactInfo = {
+				name1:firstName,
+				name2:lastName,
+				email: customerEmail,
+				phone: num1+num2+num3
+			}
+			theMasterBase.push(newReservationContactInfo);
 			responseMessage = "Reservation Sent! We'll contact you shortly to confirm your stay at Dog Haüs"
 			$(".popupDivSuccess").html(responseMessage);
 			$(".popupDivSuccess").show(600, function(){
