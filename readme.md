@@ -1,7 +1,7 @@
 # DogHaüs
 The DogHaüs serves as a proof of concept website for a fictitious hotel serving guests travelling with their dogs through Austin, Texas.
 
-doghaus.herokuapp.com
+<a href="doghaus.herokuapp.com">doghaus.herokuapp.com</a>
 
 ### DogHaüs Team:
 <ul>
