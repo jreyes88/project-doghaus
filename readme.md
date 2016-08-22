@@ -1,6 +1,8 @@
 # DogHaüs
 The DogHaüs serves as a proof of concept website for a fictitious hotel serving guests travelling with their dogs through Austin, Texas.
 
+doghaus.herokuapp.com
+
 ### DogHaüs Team:
 <ul>
 	<li><a href="https://github.com/Multishifties">Michael Desantis</a></li>
@@ -13,5 +15,10 @@ The DogHaüs serves as a proof of concept website for a fictitious hotel serving
 <ul>
 	<li>Google Maps API</li>
 	<li>Meetup API</li>
-	
+	<li>Open Weather Map API</li>
+	<li>Animsition</li>
+	<li>Slick Photo Carousel</li>
+	<li>Bootstrap</li>
+	<li>Firebase</li>
+	<li>Hand-written code for Reservation System</li>
 </ul>
